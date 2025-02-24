@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/videoListFragment">
+
+    <fragment
+        android:id="@+id/videoListFragment"
+        android:name="com.practicum.vktestappvideoviewer.ui.video.VideoListFragment"
+        android:label="VideoListFragment">
+        <action
+            android:id="@+id/action_videoListFragment_to_videoDetailsFragment"
+            app:destination="@id/videoDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoDetailsFragment"
+        android:name="com.practicum.vktestappvideoviewer.ui.video.VideoDetailsFragment"
+        android:label="VideoDetailsFragment">
+        <argument
+            android:name="video"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+</navigation>
