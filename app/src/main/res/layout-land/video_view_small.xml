@@ -50,12 +50,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/channel"
+        android:id="@+id/duration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:fontFamily="@font/roboto_medium"
-        android:text="@string/length"
+        tools:text="@string/length"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@id/channel_image"
         app:layout_constraintTop_toBottomOf="@id/video_name" />s
